@@ -3,12 +3,13 @@
 /**
  * print_line - a function that draws a straight line in terminal
  * @n: input number of times to print '-'
- *Return: a straight line
+ * Return: a straight line
  */
 
 void print_line(int n)
 {
 	int co;
+
 	if (n <= 0)
 	{
 		_putchar('\n');
