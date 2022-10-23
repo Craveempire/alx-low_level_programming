@@ -1,20 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
-
 /**
- * main - Entry point
+ * main - Print lowercase alphabets
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
-	int ch = 'a';
+	char word;
 
-	while (ch <= '2')
-	{
-		putchar(ch);
-		ch++;
-	}
+	for (word = 'a'; word <= 'z'; word++)
+		putchar(word);
 	putchar('\n');
+
 	return (0);
 }
