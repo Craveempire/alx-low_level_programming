@@ -1,9 +1,14 @@
-#ifndef _LISTS_
-#define _LISTS_
+#ifndef LISTS_H
+#define LISTS_H
 
-#include <stdio.h>
+/*
+ * File: lists.h
+ * Auth: Eyebiokin Olamilekan O
+ * Desc: Header file containing prototypes and definitions for all function
+ * and types written in the 0x11-singly_linked_lists directory.
+ */
+
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * struct list_s - singly linked list
@@ -12,15 +17,15 @@
  * @next: points to the next node
  *
  * Description: singly linked list node structure
- * for Holberton project
+ * for ALX project
  */
 typedef struct list_s
 {
-		char *str;
+	char *str;
 
-			unsigned int len;
+	unsigned int len;
 
-				struct list_s *next;
+	struct list_s *next;
 } list_t;
 
 size_t print_list(const list_t *h);
